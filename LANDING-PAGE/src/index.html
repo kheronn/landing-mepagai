@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/style.css">
+    <title>Landing page</title>
+    <link rel="shortcut icon" href="/src/assets/img/monetization.svg" type="image/x-icon">
+    <script defer src="/src/assets/js/index.js"></script>
+</head>
+<body class="bg-zinc-500">
+    <header class="bg-slate-950   w-full h-24 shadow-2xl flex items-center justify-between pl-4 pr-4 pt-3r" > 
+        <h1 class="font-extrabold text-white text-6xl">Logo</h1>
+        <nav class="flex items-center">
+            <button onclick="menuResponsivo()" class="cursor-pointer laptop:hidden">
+                <img id="menuimg" src="/src/assets/img/menu.svg" alt="menu">
+                <!--ICONE SVG DO MENU-->
+            </button>
+            <ul id="navUl" class="hidden laptop:flex flex-wrap items-end gap-5 ">
+                <li>
+                    <a class="text-white hover:text-slate-500 p-2" href="#">Projeto</a>
+                </li>
+                <li>
+                    <a class="text-white hover:text-slate-500 p-2" href="#">Como funciona</a>
+                </li>
+                <li>
+                    <a class="text-white hover:text-slate-500 p-2" href="#">Motivação</a>
+                </li>
+                <li> 
+                    <a class="text-white hover:text-slate-500 p-2" href="#">Escola Piloto</a> 
+                </li>
+                <li>
+                    <a class="text-white hover:text-slate-500 p-2" href="#">Desenvolvedores</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="hidden laptop:block bg-slate-800 hover:bg-white hover:text-slate-800 transition-colors text-white rounded-full w-48 h-10 font-semibold">Entrar</button>
+        <!--menu responsivo só é ativado quando for clicado no botão de menu em aparelhos android--> 
+    </header>
+    <main>
+         <aside id="menuMobile" class="bg-slate-950 laptop:hidden w-48 h-screen float-right">
+        <nav class="flex flex-col items-center pb-6">
+            <ul id="navUl" class="flex flex-col gap-5 ">
+                <li>
+                    <a class="text-white hover:text-slate-500 p-2" href="#">Projeto</a>
+                </li>
+                <li>
+                    <a class="text-white hover:text-slate-500 p-2" href="#">Como funciona</a>
+                </li>
+                <li>
+                    <a class="text-white hover:text-slate-500 p-2" href="#">Motivação</a>
+                </li>
+                <li> 
+                    <a class="text-white hover:text-slate-500 p-2" href="#">Escola Piloto</a> 
+                </li>
+                <li>
+                    <a class="text-white hover:text-slate-500 p-2" href="#">Desenvolvedores</a>
+                </li>
+            </ul>
+        </nav>
+        <button id="mobilebnt" class="laptop:block bg-slate-800 hover:bg-white hover:text-slate-800 transition-colors text-white rounded-full w-48 h-10 font-semibold">Entrar</button>
+    </aside>
+    </main>
+</body>
+</html>
