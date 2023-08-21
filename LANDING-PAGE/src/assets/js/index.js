@@ -1,9 +1,7 @@
 function menuResponsivo(){
     if (menuMobile.style.display == 'block'){
         menuMobile.style.display = 'none'
-        document.getElementById('menuimg').src = "/src/assets/img/menu.svg"
-        
-        
+        document.getElementById('menuimg').src = "/src/assets/img/menu.svg" 
     }
     else{
         menuMobile.style.display = 'block'
