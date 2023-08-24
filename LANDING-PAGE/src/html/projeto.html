@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="dar">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/style.css">
-    <title>Mepagai Escola</title>
+    <title>Projeto</title>
     <link rel="shortcut icon" href="/src/assets/img/Logotipotransparente.png" type="image/x-icon">
     <script defer src="/src/assets/js/index.js"></script>
 </head>
-<body class="w-screen">
-    <header class="bg-stone-900 border-b-2 absolute  border-neutral-100   w-screen h-24 shadow-2xl flex items-center justify-between pl-4 pr-4 pt-3r" > 
+<body>
+    <header class="bg-stone-900 border-b-2 absolute  border-neutral-100   w-full h-24 shadow-2xl flex items-center justify-between pl-4 pr-4 pt-3r" > 
         <img class="w-24 h-24 " src="/src/assets/img/Logotipotransparente.png" alt="logo">
         <nav class="flex items-center">
             <button onclick="menuResponsivo()" class="cursor-pointer laptop:hidden">
@@ -17,9 +17,6 @@
                 <!--MENU HAMBUTGINHO SÓ APARECE NO MOBILE-->
             </button>
             <ul id="navUl" class="hidden laptop:flex flex-wrap items-end gap-5 ">
-                <li>
-                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300" href="/src/html/projeto.html">Projeto</a>
-                </li>
                 <li>
                     <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300" href="/src/html/como-funciona.html">Como funciona</a>
                 </li>
@@ -42,9 +39,6 @@
    <nav class="flex flex-col items-center pb-6 pt-8">
        <ul id="navUl" class="flex flex-col gap-5 ">
            <li>
-               <a class="text-white p-2 hover:border-b-2 hover:border-stone-300" href="#">Projeto</a>
-           </li>
-           <li>
                <a class="text-white p-2 hover:border-b-2 hover:border-stone-300" href="#">Como funciona</a>
            </li>
            <li>
@@ -61,21 +55,5 @@
    <button id="mobilebnt" class="laptop:block bg-white hover:text-white hover:bg-slate-600 transition-colors  rounded-full w-48 h-10 font-semibold">Entrar</button>
 </aside>
 </div>
-    <main id="indexMain" class="pt-24 w-screen h-screen flex dark:dark ">
-        <section class="flex w-full justify-center flex-wrap ">
-            <div class="w-80 m-20">
-                <h1 class="text-6xl pb-4 font-bold">O que é o<span class="text-orange-600">Mepagai?</span></h1>
-                <p class="text-2xl">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur, alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste assumenda distinctio voluptatem ea aliquid?
-                </p>
-            </div>
-            <div class="m-20">
-                <img src="/src/assets/img/app.svg" class="hover:border-b-2 hover:border-stone-300"" alt="app">
-            </div>
-          
-            
-        </section>
-      
-    </main>
 </body>
 </html>

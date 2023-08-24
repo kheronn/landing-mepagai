@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html, js}'],
+  darkMode : 'class',
   theme: {
+    colors: {
+      'colordark': '#0f0f0f',
+      },
     screens: {
       'phone': '640px',
       // => @media (min-width: 640px) { ... }
@@ -14,6 +18,7 @@ module.exports = {
       'computer': '1280px',
       // => @media (min-width: 1280px) { ... }
     },
+    
     extend: {},
   },
   plugins: [],
