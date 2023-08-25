@@ -3,9 +3,6 @@ module.exports = {
   content: ['./src/**/*.{html, js}'],
   darkMode : 'class',
   theme: {
-    colors: {
-      'colordark': '#0f0f0f',
-      },
     screens: {
       'phone': '640px',
       // => @media (min-width: 640px) { ... }
