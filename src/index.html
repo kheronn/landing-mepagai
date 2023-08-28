@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="" id="htmldark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,178 +8,222 @@
     <title>MePagaí Escola</title>
     <link rel="stylesheet" href="./src/style.css">
     <link rel="shortcut icon" href="./src/assets/img/Logotipotransparente.png" type="image/x-icon">
-    <link rel="stylesheet" href=".https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-    <script defer src="/src/assets/js/index.js"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700;800&family=Lato:wght@300&display=swap"
+        rel="stylesheet">
+    <script defer src="/src/assets/js/index.js"></script>
     <style>
-        #dark_mode{
-            color:whitesmoke;
+        #dark_mode {
+            color: whitesmoke;
             padding: 2rem;
             cursor: pointer;
 
         }
     </style>
 </head>
+
 <body class="w-screen h-auto overflow-x-hidden">
     <header id="header" class="bg-indigo-950 top-0 h-52 absolute w-screen laptop:h-28
-     flex items-center justify-between pl-4 pr-4 pt-3r dark:bg-zinc-900" > 
+     flex items-center justify-between pl-4 pr-4 pt-3r dark:bg-zinc-900">
         <img class="w-24 h-24" src="/src/assets/img/Logotipotransparente.png" alt="logo">
         <nav class="flex items-center">
             <ul id="navUl" class=" laptop:flex flex-wrap items-end gap-5 ">
                 <li>
-                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href=".#projeto" onclick="projeto()">Projeto</a>
+                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href=".#projeto"
+                        onclick="projeto()">Projeto</a>
                 </li>
                 <li>
-                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href="./src/html/como-funciona.html">Como funciona</a>
+                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold"
+                        href="./src/html/como-funciona.html">Como funciona</a>
                 </li>
                 <li>
-                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href="./src/html/motivação.html">Motivação</a>
-                </li>
-                <li> 
-                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href="./src/html/escola-piloto.html">Escola Piloto</a> 
+                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold"
+                        href="./src/html/motivação.html">Motivação</a>
                 </li>
                 <li>
-                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href="./src/html/desenvolvedores.html">Desenvolvedores</a>
+                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold"
+                        href="./src/html/escola-piloto.html">Escola Piloto</a>
+                </li>
+                <li>
+                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold"
+                        href="./src/html/desenvolvedores.html">Desenvolvedores</a>
                 </li>
             </ul>
         </nav>
         <div class="hidden laptop:inline-block">
-        <span class="material-symbols-outlined" id="dark_mode" onclick="modeDark()">
-            sync
+            <span class="material-symbols-outlined" id="dark_mode" onclick="modeDark()">
+                sync
             </span>
         </div>
         <button onclick="menuResponsio()" class="cursor-pointer laptop:hidden">
             <img id="menuimg" src="/src/assets/img/menu.svg" alt="menu">
         </button>
-            <!--MENU HAMBURGINHO SÓ APARECE NO MOBILE-->
+        <!--MENU HAMBURGINHO SÓ APARECE NO MOBILE-->
     </header>
 
-    <main id="indexMain" class="bg-gradient-to-b from-violet-100 from-15% to-90% to-white  dark:bg-gradient-to-b dark:from-zinc-900 dark:from-15% dark:to-90% dark:to-violet-950 pt-24 w-screen h-auto flex">
+    <main id="indexMain"
+        class="bg-gradient-to-b from-violet-100 from-15% to-90% to-white  dark:bg-gradient-to-b dark:from-zinc-900 dark:from-15% dark:to-90% dark:to-violet-950 pt-24 w-screen h-auto flex">
         <section class="flex w-full h-auto justify-center laptop:justify-between flex-wrap pt-12 overflow-x-hidden">
             <div class="w-full flex justify-evenly flex-wrap m-24 items-center">
                 <div class="w-80 flex-wrap flex-row flex justify-center">
-                    <h1 class="text-6xl pb-14 font-bold text-stone-800 dark:text-slate-200 ">O que é o <span class="text-sky-600">MePagaí?</span>
+                    <h1 class="text-6xl pb-14 font-bold text-stone-800 dark:text-slate-200 ">O que é o <span
+                            class="text-sky-600">MePagaí?</span>
                     </h1>
                     <p class="text-2xl text-stone-950 dark:text-slate-200 text-justify ">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur, alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste assumenda distinctio voluptatem ea aliquid?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur,
+                        alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste
+                        assumenda distinctio voluptatem ea aliquid?
                     </p>
                 </div>
                 <img src="/src/assets/img/home.svg" alt="app" class="border-4 rounded-md m-6 border-black ">
             </div>
-        </div>
-
-          
-        <div class="w-full flex justify-evenly flex-wrap-reverse">
-            <img src="/src/assets/img/home.svg" alt="app" class="border-4 m-6 rounded-md border-black ">
-            <div class="w-80 flex-wrap flex-row ">
-                <h1 class="text-6xl pb-4 font-bold text-stone-800">O que é o <span class="text-sky-600">MePagaí?</span>
-                </h1>
-                <p class="text-2xl text-stone-950 ">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur, alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste assumenda distinctio voluptatem ea aliquid
-                </p>
             </div>
-        </div>
-    </div>
-    </section>
-</main>
+
+
+            <div class="w-full flex justify-evenly flex-wrap-reverse">
+                <img src="/src/assets/img/home.svg" alt="app" class="border-4 m-6 rounded-md border-black ">
+                <div class="w-80 flex-wrap flex-row ">
+                    <h1 class="text-6xl pb-4 font-bold text-stone-800">O que é o <span
+                            class="text-sky-600">MePagaí?</span>
+                    </h1>
+                    <p class="text-2xl text-stone-950 ">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur,
+                        alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste
+                        assumenda distinctio voluptatem ea aliquid
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
 
 
     <!--PROJETO-->
-    <main id="projetoMain"  class="">
+    <main id="projetoMain" class="">
         <section class="mt-64 w-screen h-auto flex justify-center dark:bg-neutral-800" id="projeto">
-            <div class="w-4/5">    
+            <div class="w-4/5">
                 <h2 class="text-6xl pb-4 font-bold text-stone-700 dark:text-gray-200 mb-8">O projeto</h2>
-                    <p class="text-2xl text-stone-700 dark:text-gray-200 ">
-                        Em um mundo onde a educação financeira é fundamental para o sucesso dos indivíduos, estamos orgulhosos de apresentar a inovadora Plataforma de conscientização em Educação Financeira <span class="text-sky-600">MePagaí</span>, especialmente desenvolvida para escolas.
-                        Com a nossa plataforma, as escolas podem criar suas próprias  moedas virtuais, capacitando os alunos a desenvolverem uma compreensão sólida sobre como gerenciar recursos de forma inteligente. Estamos entusiasmados em fazer parte do processo de preparar as próximas gerações para um futuro financeiramente estável e próspero. 
-                        Junte-se a nós nessa jornada de educação financeira!
-                    </p>
-                    <button class="bg-stone-800  dark:bg-slate-200 w-28 h-12 mt-8 rounded-2xl float-right">
-                        <a href=".#header" class="dark:text-stone-800 text-stone-300 mt-4  text-2xl font-semibold">voltar</a>
-                    </button>
-                </div>
+                <p class="text-2xl text-stone-700 dark:text-gray-200 ">
+                    Em um mundo onde a educação financeira é fundamental para o sucesso dos indivíduos, estamos
+                    orgulhosos de apresentar a inovadora Plataforma de conscientização em Educação Financeira <span
+                        class="text-sky-600">MePagaí</span>, especialmente desenvolvida para escolas.
+                    Com a nossa plataforma, as escolas podem criar suas próprias moedas virtuais, capacitando os alunos
+                    a desenvolverem uma compreensão sólida sobre como gerenciar recursos de forma inteligente. Estamos
+                    entusiasmados em fazer parte do processo de preparar as próximas gerações para um futuro
+                    financeiramente estável e próspero.
+                    Junte-se a nós nessa jornada de educação financeira!
+                </p>
+                <button class="bg-stone-800  dark:bg-slate-200 w-28 h-12 mt-8 rounded-2xl float-right">
+                    <a href=".#header"
+                        class="dark:text-stone-800 text-stone-300 mt-4  text-2xl font-semibold">voltar</a>
+                </button>
+            </div>
         </section>
     </main>
-        
+
     <!--COMO FUNCIONA-->
     <main id="ComofuncionaMain" class="">
         <section class="mt-64 w-screen h-auto flex justify-center dark:bg-neutral-800" id="projeto">
-            <div class="w-4/5">    
+            <div class="w-4/5">
                 <h2 class="text-6xl pb-4 font-bold text-stone-700 dark:text-gray-200 mb-8">Como funciona
                 </h2>
                 <p class="text-2xl text-stone-700 dark:text-gray-200 ">
-                    Em um mundo onde a educação financeira é fundamental para o sucesso dos indivíduos, estamos orgulhosos de apresentar a inovadora Plataforma de conscientização em Educação Financeira <span class="text-sky-600">MePagaí</span>, especialmente desenvolvida para escolas.
-                    Com a nossa plataforma, as escolas podem criar suas próprias  moedas virtuais, capacitando os alunos a desenvolverem uma compreensão sólida sobre como gerenciar recursos de forma inteligente. Estamos entusiasmados em fazer parte do processo de preparar as próximas gerações para um futuro financeiramente estável e próspero. 
-                        Junte-se a nós nessa jornada de educação financeira!
+                    Em um mundo onde a educação financeira é fundamental para o sucesso dos indivíduos, estamos
+                    orgulhosos de apresentar a inovadora Plataforma de conscientização em Educação Financeira <span
+                        class="text-sky-600">MePagaí</span>, especialmente desenvolvida para escolas.
+                    Com a nossa plataforma, as escolas podem criar suas próprias moedas virtuais, capacitando os alunos
+                    a desenvolverem uma compreensão sólida sobre como gerenciar recursos de forma inteligente. Estamos
+                    entusiasmados em fazer parte do processo de preparar as próximas gerações para um futuro
+                    financeiramente estável e próspero.
+                    Junte-se a nós nessa jornada de educação financeira!
                 </p>
                 <button class="bg-stone-800 hover:bg-gray-900 dark:bg-slate-200 w-28 h-12 mt-8 rounded-2xl float-right">
-                     <a href=".#header" class="dark:text-stone-800 text-stone-300 mt-4  text-2xl font-semibold">voltar
-                     </a>  
+                    <a href=".#header" class="dark:text-stone-800 text-stone-300 mt-4  text-2xl font-semibold">voltar
+                    </a>
                 </button>
             </div>
-        </section> 
+        </section>
     </main>
-   
+
     <!--MOTIVAÇÃO-->
     <main id="motivacaoMain" class="">
         <section class="mt-64 w-screen h-auto flex justify-center dark:bg-neutral-800" id="projeto">
-            <div class="w-4/5">    
+            <div class="w-4/5">
                 <h2 class="text-6xl pb-4 font-bold text-stone-700 dark:text-gray-200 mb-8">Motivação
                 </h2>
                 <p class="text-2xl text-stone-700 dark:text-gray-200 ">
-                    Em um mundo onde a educação financeira é fundamental para o sucesso dos indivíduos, estamos orgulhosos de apresentar a inovadora Plataforma de conscientização em Educação Financeira <span class="text-sky-600">MePagaí</span>, especialmente desenvolvida para escolas.
-                    Com a nossa plataforma, as escolas podem criar suas próprias  moedas virtuais, capacitando os alunos a desenvolverem uma compreensão sólida sobre como gerenciar recursos de forma inteligente. Estamos entusiasmados em fazer parte do processo de preparar as próximas gerações para um futuro financeiramente estável e próspero. 
-                        Junte-se a nós nessa jornada de educação financeira!
+                    Em um mundo onde a educação financeira é fundamental para o sucesso dos indivíduos, estamos
+                    orgulhosos de apresentar a inovadora Plataforma de conscientização em Educação Financeira <span
+                        class="text-sky-600">MePagaí</span>, especialmente desenvolvida para escolas.
+                    Com a nossa plataforma, as escolas podem criar suas próprias moedas virtuais, capacitando os alunos
+                    a desenvolverem uma compreensão sólida sobre como gerenciar recursos de forma inteligente. Estamos
+                    entusiasmados em fazer parte do processo de preparar as próximas gerações para um futuro
+                    financeiramente estável e próspero.
+                    Junte-se a nós nessa jornada de educação financeira!
                 </p>
                 <button class="bg-stone-800 hover:bg-gray-900 dark:bg-slate-200 w-28 h-12 mt-8 rounded-2xl float-right">
-                     <a href=".#header" class="dark:text-stone-800 text-stone-300 mt-4  text-2xl font-semibold">voltar
-                     </a>  
+                    <a href=".#header" class="dark:text-stone-800 text-stone-300 mt-4  text-2xl font-semibold">voltar
+                    </a>
                 </button>
             </div>
-        </section> 
+        </section>
     </main>
 
     <!--ESCOOA PILOTO-->
     <main id="escolaPilotoMain" class="">
         <section class="mt-64 w-screen h-auto flex justify-center dark:bg-neutral-800" id="projeto">
-            <div class="w-4/5">    
+            <div class="w-4/5">
                 <h2 class="text-6xl pb-4 font-bold text-stone-700 dark:text-gray-200 mb-8">Escola piloto
                 </h2>
                 <p class="text-2xl text-stone-700 dark:text-gray-200 ">
-                    Em um mundo onde a educação financeira é fundamental para o sucesso dos indivíduos, estamos orgulhosos de apresentar a inovadora Plataforma de conscientização em Educação Financeira <span class="text-sky-600">MePagaí</span>, especialmente desenvolvida para escolas.
-                    Com a nossa plataforma, as escolas podem criar suas próprias  moedas virtuais, capacitando os alunos a desenvolverem uma compreensão sólida sobre como gerenciar recursos de forma inteligente. Estamos entusiasmados em fazer parte do processo de preparar as próximas gerações para um futuro financeiramente estável e próspero. 
-                        Junte-se a nós nessa jornada de educação financeira!
+                    Em um mundo onde a educação financeira é fundamental para o sucesso dos indivíduos, estamos
+                    orgulhosos de apresentar a inovadora Plataforma de conscientização em Educação Financeira <span
+                        class="text-sky-600">MePagaí</span>, especialmente desenvolvida para escolas.
+                    Com a nossa plataforma, as escolas podem criar suas próprias moedas virtuais, capacitando os alunos
+                    a desenvolverem uma compreensão sólida sobre como gerenciar recursos de forma inteligente. Estamos
+                    entusiasmados em fazer parte do processo de preparar as próximas gerações para um futuro
+                    financeiramente estável e próspero.
+                    Junte-se a nós nessa jornada de educação financeira!
                 </p>
                 <button class="bg-stone-800 hover:bg-gray-900 dark:bg-slate-200 w-28 h-12 mt-8 rounded-2xl float-right">
-                     <a href=".#header" class="dark:text-stone-800 text-stone-300 mt-4  text-2xl font-semibold">voltar
-                     </a>  
+                    <a href=".#header" class="dark:text-stone-800 text-stone-300 mt-4  text-2xl font-semibold">voltar
+                    </a>
                 </button>
             </div>
-        </section> 
+        </section>
     </main>
 
     <!--DESENVOLVEDORES-->
     <main id="desenvolvedoresMain" class="">
         <section class="mt-64 w-screen h-auto flex justify-center dark:bg-neutral-800" id="projeto">
-            <div class="w-4/5">    
+            <div class="w-4/5">
                 <h2 class="text-6xl pb-4 font-bold text-stone-700 dark:text-gray-200 mb-8 break-words">Desenvolvedores
                 </h2>
                 <p class="text-2xl text-stone-700 dark:text-gray-200 ">
-                    Em um mundo onde a educação financeira é fundamental para o sucesso dos indivíduos, estamos orgulhosos de apresentar a inovadora Plataforma de conscientização em Educação Financeira <span class="text-sky-600">MePagaí</span>, especialmente desenvolvida para escolas.
-                    Com a nossa plataforma, as escolas podem criar suas próprias  moedas virtuais, capacitando os alunos a desenvolverem uma compreensão sólida sobre como gerenciar recursos de forma inteligente. Estamos entusiasmados em fazer parte do processo de preparar as próximas gerações para um futuro financeiramente estável e próspero. 
-                        Junte-se a nós nessa jornada de educação financeira!
+                    Em um mundo onde a educação financeira é fundamental para o sucesso dos indivíduos, estamos
+                    orgulhosos de apresentar a inovadora Plataforma de conscientização em Educação Financeira <span
+                        class="text-sky-600">MePagaí</span>, especialmente desenvolvida para escolas.
+                    Com a nossa plataforma, as escolas podem criar suas próprias moedas virtuais, capacitando os alunos
+                    a desenvolverem uma compreensão sólida sobre como gerenciar recursos de forma inteligente. Estamos
+                    entusiasmados em fazer parte do processo de preparar as próximas gerações para um futuro
+                    financeiramente estável e próspero.
+                    Junte-se a nós nessa jornada de educação financeira!
                 </p>
                 <button class="bg-stone-800 hover:bg-gray-900 dark:bg-slate-200 w-28 h-12 mt-8 rounded-2xl float-right">
-                     <a href=".#header" class="dark:text-stone-800 text-stone-300 mt-4  text-2xl font-semibold">voltar
-                     </a>  
+                    <a href=".#header" class="dark:text-stone-800 text-stone-300 mt-4  text-2xl font-semibold">voltar
+                    </a>
                 </button>
             </div>
-        </section> 
+        </section>
     </main>
-   
+
 
 
     <footer class="w-screen h-72 bg-indigo-950">
 
     </footer>
 </body>
+
 </html>
