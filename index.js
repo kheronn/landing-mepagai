@@ -19,3 +19,12 @@
   
     elemento.classList.toggle("dark");
   };
+  const darkModeButton = document.getElementById('darkModeButton');
+  const body = document.body;
+
+  darkModeButton.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    const isDarkMode = body.classList.contains('dark');
+    darkModeButton.innerHTML = `<span class="material-symbols-outlined">${isDarkMode ? 'light_mode' : 'light_mode'}</span>${buttonText}`;
+  });
+ 
