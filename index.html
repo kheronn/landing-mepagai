@@ -46,7 +46,7 @@
      flex items-center justify-between pl-4 pr-4 pt-3" > 
         <img class="w-24 h-24" src="./img/Logotipotransparente.png" alt="logo">
         <nav class="flex items-center">
-            <ul id="navUl" class="flex hidden phone:Block flex-wrap items-end gap-5 ">
+            <ul id="navUl" class="flex hidden phone-2:Block flex-wrap items-end gap-5 ">
                 <li>
                     <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href="/projeto.html" id="bnt-projeto">Projeto</a>
                 </li>
@@ -70,7 +70,7 @@
         </label>
         <!--MENU HAMBURGINHO SÓ APARECE NO MOBILE-->
         <button onclick="menuResponsio()" class="cursor-pointer laptop:hidden">
-            <img id="menuimg" src="./img/menu.svg" alt="menu" class="w-14 h-14">
+            <img class="w-12 h12" id="menuimg" src="./img/menu.svg" alt="menu">
         </button>
     </header>
 
@@ -102,9 +102,37 @@
     </section>
 </main>
 
-    <footer class="w-screen h-72 bg-gray-950">
+<footer class="bg-gray-950 dark:bg-gray-900">
+    <div class="w-full mas-w-screen x1 mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-betwee">
+            <a href="#" class="flex items-center mb-4 sm:mb-0">
+                <img src="img/Logotipotransparente.png" class="h-8 mr-3" alt="MePagaí Logo"/>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">MePagaí</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">Facebook</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Instagram</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">Contato</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Desenvolvedores</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-1 border-gray-900 sm:mx-auto dark:border-gray-950 lg:my-8"/>
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 
+            <a href="#" class="hover:underline">CESP™</a>. Todos os direitos reservados.</span>
+    </div>
+    
+</footer>
 
-    </footer>
+
+
 </body>
 </html>
 

@@ -28,3 +28,4 @@
     darkModeButton.innerHTML = `<span class="material-symbols-outlined">${isDarkMode ? 'light_mode' : 'light_mode'}</span>${buttonText}`;
   });
  
+  
