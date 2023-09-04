@@ -1,31 +1,25 @@
-// function menuResponsivo(){
-//   const header = document.getElementById('header')
-//     if (header.style.display == 'block'){
-//         header.style.display = 'none'
-//         document.getElementById('menuimg').src = "/src/assets/img/menu.svg" 
-//     }
-//     else{
-//         header.style.display = 'block'
-//         mobilebnt.style.display = 'block'
-//         document.getElementById('menuimg').src = "src\assets\img\close.svg"
-//     }
-//     }
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}
 
-  function modeDark() {
+// Whenever the user explicitly chooses light mode
+localStorage.theme = 'light'
 
-    let elemento = document.getElementById("htmldark");
-    let botao = document.getElementById("dark_mode");
-    let botaolight = document.getElementById("light_mode");
-  
-    elemento.classList.toggle("dark");
-  };
-  const darkModeButton = document.getElementById('darkModeButton');
-  const body = document.body;
+// Whenever the user explicitly chooses dark mode
+localStorage.theme = 'dark'
 
-  darkModeButton.addEventListener('click', () => {
-    body.classList.toggle('dark');
-    const isDarkMode = body.classList.contains('dark');
-    darkModeButton.innerHTML = `<span class="material-symbols-outlined">${isDarkMode ? 'light_mode' : 'light_mode'}</span>${buttonText}`;
-  });
- 
-  
+// Whenever the user explicitly chooses to respect the OS preference
+localStorage.removeItem('theme')
+
+const checkbox = document.querySelector('input[type="checkbox"]');
+checkbox.addEventListener("change", function(event)
+if (event.target.checked){
+  document.documentElement.classList.remove("dark");
+  localStorage.theme = "light"
+}
+else{
+
+});
