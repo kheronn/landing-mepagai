@@ -1,163 +1,354 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="" id="htmldark">
+<html
+ lang="pt-br">
+
 <head>
-    <title>MePagaí Escola</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/Logotipotransparente.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-    <script defer src="index.js "></script> 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>
+        MePagaí Escola
+    </title>
+
+    <meta
+     charset="UTF-8"
+     >
+     
+    <meta 
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+    >
+
+    <link 
+    href="./img/Logotipotransparente.png" 
+    rel="shortcut icon" 
+    type="image/x-icon"
+    >
+
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet"
+     >
+
+    <script
+    defer 
+    src="index.js">
+    </script>
+
+    <script 
+    src="https://cdn.tailwindcss.com">
+    </script>
+
     <script>
-          tailwind.config = {
-            darkMode : 'class',
-      theme: {
-        screens: {
-      'phone': '640px',
-      // => @media (min-width: 640px) { ... }
-      'phone-2': '785px',
-      // => @media (min-width: 720px) { ... }
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                screens: {
+                    'phone': '640px',
+                    // => @media (min-width: 640px) { ... }
+                    'phone-2': '785px',
+                    // => @media (min-width: 720px) { ... }
 
-      'laptop': '1024px',
-      // => @media (min-width: 1024px) { ... }
+                    'laptop': '1024px',
+                    // => @media (min-width: 1024px) { ... }
 
-      'computer': '1280px',
-      // => @media (min-width: 1280px) { ... }
- },
-        extend: {
-          colors: {
-          }
+                    'computer': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+                },
+                extend: {
+                    colors: {
+                    }
+                }
+            }
         }
-      }
-    }
     </script>
 
     <style>
-        #dark_mode{
-            color:whitesmoke;
+        #dark_mode {
+            color: whitesmoke;
             padding: 0.5rem;
             cursor: pointer;
             scale: 1.8;
 
         }
-        #dark_mode:hover{
+
+        #dark_mode:hover {
             scale: 1.9;
-            color:whitesmoke;
+            color: whitesmoke;
             padding: 2rem;
             cursor: pointer;
 
         }
     </style>
 </head>
-<body class="w-screen h-auto overflow-x-hidden">
-    <header id="header" class="bg-gray-950 top-0 h-52 absolute w-screen laptop:h-28
-     flex items-center justify-between pl-4 pr-4 pt-3" > 
-        <img class="w-24 h-24" src="./img/Logotipotransparente.png" alt="logo">
-        <nav class="flex items-center">
-            <ul id="navUl" class="laptop:flex phone-2:Block flex-wrap hidden items-end gap-5 ">
+
+<body
+ class="w-screen h-auto overflow-x-hidden font-thin"
+ >
+    <header
+     id="header"
+     class="bg-gray-950 top-0 h-52 absolute w-screen laptop:h-28
+     flex items-center justify-between pl-4 pr-4 pt-3"
+     >
+        <img 
+        class="w-24 h-24"
+        src="./img/Logotipotransparente.png" 
+        alt="logo"
+        >
+        <nav
+         class="flex items-center"
+         >
+            <ul 
+            id="navUl"
+            class="laptop:flex phone-2:Block flex-wrap hidden items-end gap-5 "
+             >
                 <li>
-                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href="/projeto.html" id="bnt-projeto">Projeto</a>
+                    <a
+                     class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold"
+                     href="/projeto.html" 
+                     id="bnt-projeto"
+                     >
+                     Projeto
+                    </a>
                 </li>
                 <li>
-                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href="#">Como funciona</a>
+                    <a 
+                    class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" 
+                    href="#"
+                    >
+                    Como funciona
+                    </a>
                 </li>
                 <li>
-                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href="#">Motivação</a>
-                </li>
-                <li> 
-                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href="#">Escola Piloto</a> 
+                    <a 
+                    class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold"
+                     href="#"
+                     >
+                     Motivação
+                    </a>
                 </li>
                 <li>
-                    <a class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" href="#">Desenvolvedores</a>
+                    <a 
+                    class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold" 
+                    href="#"
+                    >
+                    Escola Piloto
+                    </a>
+                </li>
+                <li>
+                    <a 
+                    class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-bold"
+                    href="#"
+                    >
+                    Desenvolvedores
+                    </a>
                 </li>
             </ul>
         </nav>
-        <label class=" cursor-pointer m-12 hidden laptop:flex ">
-            <input type="checkbox" class="sr-only peer relative">
-            <div class="peer peer-checked:after:left-6 after:left-0 w-12 h-6 bg-zinc-700 items-center px-1 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-gray-900 after:relative after:rounded-full flex after:flex"></div>
+        <label 
+        class="cursor-pointer m-12 hidden laptop:flex"
+        >
+            <input 
+            type="checkbox" 
+            class="sr-only peer relative"
+            >
+            <div
+             class="peer peer-checked:after:left-6 after:left-0 w-12 h-6 bg-zinc-700 items-center px-1 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-gray-900 after:relative after:rounded-full flex after:flex"
+             >
+            </div>
         </label>
         <!--MENU HAMBURGINHO SÓ APARECE NO MOBILE-->
-        <button onclick="menuResponsio()" class="laptop:hidden" id="bntdark">
-            <span class="material-symbols-outlined" id="dark_mode">
-                menu
-                </span>
+        <button 
+        onclick="menuResponsio()" 
+        class="laptop:hidden" 
+        id="bntdark"
+        >
+            <span 
+            class="material-symbols-outlined" 
+            id="dark_mode"
+            >
+            menu
+            </span>
+            <!--ATÉ AQUI-->
         </button>
     </header>
 
-    <main id="indexMain" class="dark:bg-zinc-900 pt-52 laptop:pt-28 w-screen h-auto flex">
-        <section class="flex w-full h-auto justify-center laptop:justify-between flex-wrap pt-12 overflow-x-hidden">
-
-            <div class="w-full flex justify-center gap-16 flex-wrap items-start my-12">
-                <div class="w-80 flex-wrap flex-row flex justify-center">
-                    <h1 class="text-6xl font-bold text-stone-800 pb-8 dark:text-slate-200 ">O que é o <span class="text-sky-600">MePagaí?</span>
+    <main 
+    id="indexMain" 
+    class="dark:bg-zinc-900 pt-52 laptop:pt-28 w-screen h-auto flex"
+    >
+        <section 
+        class="flex w-full h-auto justify-center laptop:justify-between flex-wrap pt-12 overflow-x-hidden"
+        >
+            <div 
+            class="w-full flex justify-center gap-16 flex-wrap items-start my-12"
+            >
+                <div 
+                class="w-80 flex-wrap flex-row flex justify-center"
+                >
+                    <h1 
+                    class="text-6xl font-bold text-stone-800 pb-8 dark:text-slate-200 "
+                    >
+                    O que é o 
+                    <span
+                    class="text-sky-600"
+                    >
+                    MePagaí?
+                    </span>
                     </h1>
-                    <p class="text-2xl text-stone-950 dark:text-slate-200 text-justify ">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur, alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste assumenda distinctio voluptatem ea aliquid?
+                    <p 
+                    class="text-2xl text-stone-950 dark:text-slate-200 text-justify "
+                    >
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur,
+                     alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste
+                     assumenda distinctio voluptatem ea aliquid?
                     </p>
                 </div>
-                <img src="./img/Realizar transferência.svg" alt="app" class="border-4 rounded-md m-6 border-black ">
+                <img 
+                class="border-4 rounded-md m-6 border-black"
+                src="./img/Realizar transferência.svg" 
+                alt="app" 
+                >
             </div>
-          
-        <div class="w-full flex justify-center gap-16 flex-wrap-reverse  my-12">
-            <img src="./img/Realizar transferência.svg" alt="app" class="border-4 m-6 rounded-md border-black ">
-            <div class="w-80 flex-wrap flex-row">
-                <h1 class="text-6xl pb-8 font-bold text-stone-800 dark:text-slate-200">Faça <span class="text-sky-600">Login</span> no app! </h1> 
-                
-                <p class="text-2xl text-stone-950 dark:text-slate-200 ">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur, alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste assumenda distinctio voluptatem ea aliquid
-                </p>
+
+            <div 
+            class="w-full flex justify-center gap-16 flex-wrap-reverse my-12"
+            >
+                <img 
+                src="./img/Realizar transferência.svg" 
+                alt="app" 
+                class="border-4 m-6 rounded-md border-black "
+                >
+                <div 
+                class="w-80 flex-wrap flex-row"
+                >
+                    <h1 
+                    class="text-6xl pb-8 font-bold text-stone-800 dark:text-slate-200"
+                    >
+                    Faça
+                     <span
+                     class="text-sky-600"
+                     >
+                     Login
+                     </span>
+                     no app! 
+                    </h1>
+
+                    <p 
+                    class="text-2xl text-stone-950 dark:text-slate-200 "
+                    >
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur,
+                    alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste
+                    assumenda distinctio voluptatem ea aliquid
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="w-full flex justify-center gap-16 flex-wrap-reverse  my-12">
-            <div class="w-80 flex-wrap-reverse flex-row">
-                <h1 class="text-6xl pb-8 font-bold text-stone-800 dark:text-slate-200">veja seu <span class="text-sky-600">histórico</span></h1> 
-                
-                <p class="text-2xl text-stone-950 dark:text-slate-200 ">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur, alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste assumenda distinctio voluptatem ea aliquid
-                </p>
+            <div 
+            class="w-full flex justify-center gap-16 flex-wrap-reverse  my-12"
+            >
+                <div 
+                class="w-80 flex-wrap-reverse flex-row"
+                >
+                    <h1 
+                    class="text-6xl pb-8 font-bold text-stone-800 dark:text-slate-200"
+                    >
+                    veja seu 
+                     <span
+                     class="text-sky-600"
+                     >
+                     histórico
+                     </span>
+                    </h1>
+
+                    <p 
+                    class="text-2xl text-stone-950 dark:text-slate-200 "
+                    >
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur,
+                    alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste
+                    assumenda distinctio voluptatem ea aliquid
+                    </p>
+                </div>
+                <img 
+                class="border-4 m-6 rounded-md border-black "
+                src="./img/Realizar transferência.svg" 
+                alt="app" 
+                >
             </div>
-            <img src="./img/Realizar transferência.svg" alt="app" class="border-4 m-6 rounded-md border-black ">
+        </section>
+    </main>
+
+    <footer
+    class="bg-gray-950 dark:bg-gray-900 flex justify-center pt-3 phone-2:pt-8 items-center w-screen h-auto flex-col"
+    >
+        <div 
+        class="w-auto mx-auto phone:py-8 flex flex-col items-center"
+        >
+            <div 
+            class="flex items-center flex-col"
+            >
+                <a 
+                class="flex items-center mb-4 phone:mb-0"
+                href="#" 
+                >
+                    <img 
+                    src="img/Logotipotransparente.png" 
+                    class="h-8 mr-3" 
+                    alt="MePagaí Logo" />
+                    <span 
+                    class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+                    >
+                    MePagaí
+                    </span>
+                </a>
+                <nav 
+                class="w-96 my-4"
+                >
+                    <ul 
+                    class="items-center flex flex-row mb-6 gap-3 justify-center text-sm text-gray-500 phone:mb-0"
+                    >
+                        <li> <a 
+                            href="#" 
+                            class="hover:underline"
+                            >
+                            Facebook
+                            </a>
+
+                        <li> <a 
+                            href="#" 
+                            class="hover:underline"
+                            >
+                            Instagram
+                            </a>
+
+                        <li> <a 
+                            href="#" 
+                            class="hover:underline"
+                            >
+                            Contato
+                            </a>
+
+                        <li> <a 
+                            href="#" 
+                            class="hover:underline"
+                            >
+                            Desenvolvedores
+                            </a>
+                    </ul>
+                </nav>
+            </div>
+            <hr 
+            class="my-1 border-gray-600 border-spacing-1 w-screen" 
+            />
+            <span 
+            class="block text-sm text-gray-500 phone:text-center dark:text-gr0 pt-3"
+            >
+            ©2023
+                <a 
+                href="#"
+                >
+                CESP™
+                </a>
+                . Todos os direitos reservados.
+            </span>
         </div>
-
-
-     
-    </section>
-</main>
-
-<footer class="bg-gray-950 dark:bg-gray-900 flex justify-center pt-3 phone-2:pt-8 items-center w-screen h-auto flex-col">
-    <div class="w-auto mx-auto phone:py-8 flex flex-col items-center">
-        <div class="flex items-center flex-col">
-            <a href="#" class="flex items-center mb-4 phone:mb-0">
-                <img src="img/Logotipotransparente.png" class="h-8 mr-3" alt="MePagaí Logo"/>
-                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">MePagaí</span>
-            </a>
-            <nav class="w-96 my-4">
-             <ul class="items-center flex flex-row mb-6 gap-3 justify-center text-sm text-gray-500 phone:mb-0">
-                <li>
-                    <a href="#" class="hover:underline">Facebook</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">Instagram</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">Contato</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">Desenvolvedores</a>
-                </li>
-             </ul>
-            </nav>
-        </div>
-        <hr class="my-1 border-gray-600 border-spacing-1 w-screen"/>
-        <span class="block text-sm text-gray-500 phone:text-center dark:text-gr0 pt-3">©2023 
-            <a href="#">CESP™</a>. Todos os direitos reservados.</span>
-    </div>
-    
-</footer>
-
-
-
+    </footer>
 </body>
 </html>
-
