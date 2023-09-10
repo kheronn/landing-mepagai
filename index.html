@@ -58,7 +58,8 @@
                     // => @media (min-width: 640px) { ... }
                     'phone-2': '785px',
                     // => @media (min-width: 720px) { ... }
-
+                    'nav': '918px',
+                    // => @media (min-width: 917px) { ... }
                     'laptop': '1024px',
                     // => @media (min-width: 1024px) { ... }
 
@@ -79,33 +80,36 @@
  >
     <header
     id="header"
-    class="bg-sky-700 shadow-2xl top-0 h-52 absolute w-screen laptop:h-28
+    class="bg-white shadow-inner top-0  w-screen h-24
      flex items-center justify-between pl-4 pr-4 pt-3"
-     >
-        <img 
-        class="w-24 h-24 ml-4"
-        src="./img/Logotipotransparente.png" 
-        alt="logo"
-        >
+     > 
+           <!-- <img 
+            class="w-24 h-24"
+            src="./img/Logotipotransparente.png" 
+            alt="logo"
+            > -->
+            <h2
+            class="text-3xl font-bold phone-2:pl-3  text-stone-600"
+            >
+            MEPAGAÍ</h2>
         <nav
          class="flex items-center mx-8"
          >
             <ul 
-            class="laptop:flex phone-2:Block flex-wrap hidden items-end gap-5 "
+            class="nav:flex hidden items-end gap-5 "
             id="navUl"
              >
                 <li>
                     <a
-                     class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-medium"
-                     href="/projeto.html" 
-                     id="bnt-projeto"
+                     class="text-[#9479DA] p-2 font-semibold rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"
+                     href="projeto.html" 
                      >
                      Projeto
                     </a>
                 </li>
                 <li>
                     <a 
-                    class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-medium" 
+                    class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block" 
                     href="#"
                     >
                     Como funciona
@@ -113,7 +117,7 @@
                 </li>
                 <li>
                     <a 
-                    class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-medium"
+                    class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"
                      href="#"
                      >
                      Motivação
@@ -121,7 +125,7 @@
                 </li>
                 <li>
                     <a 
-                    class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-medium" 
+                    class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block" 
                     href="#"
                     >
                     Escola Piloto
@@ -129,7 +133,7 @@
                 </li>
                 <li>
                     <a 
-                    class="text-stone-300  p-2 hover:border-b-2 hover:border-stone-300 font-medium"
+                    class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"
                     href="#"
                     >
                     Desenvolvedores
@@ -140,15 +144,17 @@
        
         <button 
         onclick="menuResponsivo()" 
-        class=" text-white scale-150 phone:hidden" 
+        class=" text-stone-600 scale-150 nav:hidden" 
         >
-         <div id="menu">
+         <div 
+         id="menu"
+         >
               <span 
               class="material-symbols-outlined" 
                 >
                 menu
                </span>
-               </div>
+         </div>
                
                <div
                class="w-auto h-auto hidden" 
@@ -161,15 +167,12 @@
             </div>
         </button>
     </header>
-
-    <div 
-    class="w-48 h-auto float-right pt-52 ">
         <aside 
         id="menuMobile" 
-        class="bg-sky-700 absolute hidden w-48 h-screen"
+        class="bg-white absolute hidden w-48 h-screen shadow-inner phone:hidden"
         >
        <nav 
-       class="flex flex-col items-center pb-6 pt-8"
+       class="flex flex-col mx-3 pb-6 pt-8"
        >
            <ul 
            id="navUl" 
@@ -177,15 +180,15 @@
            >
                <li>
                    <a 
-                   class="text-white p-2 hover:border-b-2 hover:border-stone-300" 
-                   href="#"
+                   class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block" 
+                   href="projeto.html"
                    >
                    Projeto
                 </a>
                </li>
                <li>
                    <a 
-                   class="text-white p-2 hover:border-b-2 hover:border-stone-300" 
+                   class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"" 
                    href="#"
                    >
                    Como funciona
@@ -193,7 +196,7 @@
                </li>
                <li>
                    <a 
-                   class="text-white p-2 hover:border-b-2 hover:border-stone-300" 
+                   class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"" 
                    href="#"
                    >
                    Motivação
@@ -201,7 +204,7 @@
                </li>
                <li> 
                    <a 
-                   class="text-white p-2 hover:border-b-2 hover:border-stone-300" 
+                   class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"" 
                    href="#"
                    >
                    Escola Piloto
@@ -209,7 +212,7 @@
                </li>
                <li>
                    <a 
-                   class="text-white p-2 hover:border-b-2 hover:border-stone-300" 
+                   class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block" 
                    href="#"
                    >
                    Desenvolvedores
@@ -218,11 +221,8 @@
            </ul>
        </nav>
     </aside>
-    </div>
-
     <main 
-    id="indexMain" 
-    class="dark:bg-zinc-900 pt-8 laptop:pt-28 w-screen h-auto flex"
+    class="pt-8 w-screen h-auto flex"
     >
         <section 
         class="flex w-full h-auto justify-center laptop:justify-between flex-wrap overflow-x-hidden"
@@ -234,17 +234,17 @@
                 class="w-80 flex-wrap flex-row flex justify-center"
                 >
                     <h2 
-                    class="text-6xl font-bold text-stone-800 pb-8 dark:text-slate-200 "
+                    class="text-6xl font-bold text-stone-600 pb-8 "
                     >
                     O que é o 
                     <span
-                    class="text-sky-700"
+                    class="text-[#9479DA]"
                     >
                     MePagaí?
                     </span>
                     </h2>
                     <p 
-                    class="text-2xl text-stone-950 dark:text-slate-200 text-justify "
+                    class="text-2xl text-stone-600 text-justify"
                     >
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur,
                      alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste
@@ -270,19 +270,18 @@
                 class="w-80 flex-wrap flex-row"
                 >
                     <h2 
-                    class="text-6xl pb-8 font-bold text-stone-800 dark:text-slate-200"
+                    class="text-6xl pb-8 font-bold text-stone-700 dark:text-slate-200"
                     >
-                    Faça
                      <span
-                     class="text-sky-700"
+                     class="text-[#9479DA]""
                      >
-                     Login
+                     Logue
                      </span>
                      no app! 
                     </h2>
 
                     <p 
-                    class="text-2xl text-stone-950 dark:text-slate-200 text-justify "
+                    class="text-2xl text-stone-600  text-justify "
                     >
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti totam illum consectetur,
                     alias architecto magni nam minus reiciendis repellat hic eius provident rem delectus iste
@@ -292,17 +291,17 @@
             </div>
 
             <div 
-            class="w-full flex justify-center gap-16 flex-wrap-reverse  my-12"
+            class="w-full flex justify-center gap-16 flex-wrap my-12"
             >
                 <div 
                 class="w-80 flex-wrap-reverse flex-row"
                 >
                     <h2 
-                    class="text-6xl pb-8 font-extrabold text-stone-800 dark:text-slate-200"
+                    class="text-6xl pb-8 font-extrabold text-stone-800"
                     >
                     veja seu 
                      <span
-                     class="text-sky-700"
+                     class="text-[#9479DA]""
                      >
                      histórico
                      </span>
@@ -349,7 +348,7 @@
                     </span>
                 </a>
                 <nav 
-                class="w-10/12 my-4"
+                class=" my-4"
                 >
                     <ul 
                     class="items-center flex  flex-wrap mb-6 gap-3 justify-center text-sm text-gray-500 phone:mb-0"
