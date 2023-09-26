@@ -3,57 +3,37 @@
 
 <head>
     <title>
-        MePagaí Escola
+        MePagaí
     </title>
+    <!--MetaDados-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta name="description" content="Conheça o nosso novo App da escola o MePagaí com ele voçe pode realizar transferências dentro do ambiente escolar!!">
+    <meta name="author" content="Colégio Estadual Professor Sebastião Paraná">
+    <!--Links de estilo(CSS)-->
     <link href="./img/Logotipotransparente.png" rel="shortcut icon" type="image/x-icon">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Unbounded:wght@500&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Unbounded:wght@500&display=swap"
-        rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script defer src="index.js">
-    </script>
-    <script src="https://cdn.tailwindcss.com">
-    </script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                screens: {
-                    'phone': '640px',
-                    // => @media (min-width: 640px) { ... }
-                    'phone-2': '785px',
-                    // => @media (min-width: 720px) { ... }
-                    'nav': '918px',
-                    // => @media (min-width: 917px) { ... }
-                    'laptop': '1024px',
-                    // => @media (min-width: 1024px) { ... }
-
-                    'computer': '1280px',
-                    // => @media (min-width: 1280px) { ... }
-                },
-                extend: {
-                    colors: {
-                    }
-                }
-            }
-        }
-    </script>
-
+    <!--Google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <!--Google fonts-->     
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Unbounded:wght@500&display=swap" rel="stylesheet">      
+    <script defer src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        ::-webkit-scrollbar{
+            width: 10px;
+            background-color: rgb(245, 245, 244);
+        }
+        ::-webkit-scrollbar-thumb{
+            width: 10px;
+            background-color: rgb(113, 185, 207);
+            border: 2px solid rgb(245, 245, 244);
+            border-radius: 50px;
+        }
     </style>
 </head>
-<body id="body" class="w-screen h-auto overflow-x-hidden font-[poppins] bg-stone-50">
+
+<body id="body" class="w-screen h-auto overflow-x-hidden font-[Inter] bg-stone-50">
     <header id="header" class="bg-white shadow-sm top-0 w-screen h-24
      flex items-center justify-between pl-4 pr-4 pt-3">
         <h2 class="text-3xl font-extrabold phone-2:pl-3  text-stone-600">
@@ -61,86 +41,82 @@
         <nav class="flex items-center mx-8">
             <ul class="nav:flex hidden items-end gap-5 " id="navUl">
                 <li>
-                    <a class="text-[#9479DA] p-2 font-semibold rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"
+                    <a class="text-[#9479DA] p-2 font-semibold rounded-md hover:text-[#614f91] transition-colors block"
                         href="#projeto"">
                         Projeto
                     </a>
                 </li>
                 <li>
-                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"
+                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-[#614f91] transition-colors block"
                         href="#como-funciona">
                         Como funciona
                     </a>
                 </li>
                 <li>
-                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"
+                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-[#614f91] transition-colors block"
                         href="#motivacao">
                         Motivação
                     </a>
                 </li>
                 <li>
-                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"
+                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-[#614f91] transition-colors block"
                         href="#escola-piloto">
                         Escola Piloto
                     </a>
                 </li>
                 <li>
-                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"
+                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-[#614f91] transition-colors block"
                         href="#desenvolvedores">
                         Desenvolvedores
                     </a>
                 </li>
             </ul>
-        </nav>
-
+        </nav>  
+        <a href="#" class="bg-[#9479DA] m-3 hover:bg-[#614f91] nav:inline-block text-center px-2 py-1 text-stone-50 w-32 font-semibold shadow-lg rounded-md hidden">MePagaí</a>
+        <!--Aparecem apenas no mobile-->
         <button onclick="menuResponsivo()" class=" text-stone-600 scale-150 nav:hidden">
-            <div id="menu">
-                <span class="material-symbols-outlined">
-                    menu
-                </span>
-            </div>
-
-            <div class="w-auto h-auto hidden" id="close">
-                <span class="material-symbols-outlined">
-                    close
-                </span>
-            </div>
+            <img src="/img/menu.svg" alt="menu-img" id="menu"> 
+            <img src="/img/close.svg" alt="close-img" id="close" class="hidden">
         </button>
     </header>
-    <aside id="menuMobile" class="bg-white absolute hidden w-48 h-auto shadow-lg phone:hidden">
-        <nav class="flex flex-col mx-3 pb-6 pt-8">
-            <ul id="navUl" class="flex flex-col gap-5 ">
+    <aside id="menuMobile" class="bg-white absolute left-[-150vh] transition-all w-48 h-auto shadow-lg nav:hidden">
+        <nav class="flex flex-col py-2">
+            <ul id="navUl" class="flex flex-col gap-5 p-3 mb-2 rounded-xl">
                 <li>
-                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"
+                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-[#614f91] transition-colors block"
                         href="#projeto">
                         Projeto
                     </a>
                 </li>
                 <li>
-                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"" 
+                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-[#614f91] transition-colors block" 
                    href="#como-funciona">
                         Como funciona
                     </a>
                 </li>
                 <li>
-                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"" 
+                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-[#614f91] transition-colors block"
                    href="#motivacao">
                         Motivação
                     </a>
                 </li>
                 <li>
-                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"" 
+                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-[#614f91] transition-colors block" 
                    href="#escola-piloto">
                         Escola Piloto
                     </a>
                 </li>
                 <li>
-                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-white hover:bg-[#9479DA] transition-colors block"
+                    <a class="text-[#9479DA] font-semibold p-2 rounded-md hover:text-[#614f91] transition-colors block"
                         href="#desenvolvedores">
                         Desenvolvedores
                     </a>
                 </li>
+                <li>
+                    <a href="#" class="bg-[#9479DA] hover:bg-[#614f91] block w-full px-2 py-1 text-stone-50 font-semibold shadow-lg ">MePagaí</a>
+                </li>
             </ul>
+            
         </nav>
     </aside>
     <main class="pt-8 w-screen h-auto flex flex-col justify-center items-center">
@@ -204,9 +180,9 @@
         <!--Seção Projeto-->
         <section id="projeto" class="w-screen flex justify-center bg-gray-100 py-12">
             <article class="w-10/12 flex justify-center flex-col">
-                <h1 class="text-4xl font-bold text-stone-600  pb-8">
+                <h2 class="text-4xl font-bold text-stone-600  pb-8">
                     O Projeto
-                </h1>
+                </h2>
                 <p class="text-xl text-stone-600 text-justify">
                     Em um mundo onde a educação financeira é fundamental para o sucesso dos indivíduos, estamos
                     orgulhosos
@@ -229,21 +205,20 @@
         <!--Seção Como Funciona-->
         <section id="como-funciona" class="w-screen my-12 flex justify-center">
             <article class="w-10/12 flex justify-center flex-col">
-                <h1 class="text-4xl font-bold text-stone-600 pb-8">
+                <h2 class="text-4xl font-bold text-stone-600 pb-8">
                     Como funciona
-                </h1>
+                </h2>
                 <p class="text-xl text-stone-600 text-justify">
                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi quos quas eum aut quam deserunt architecto fugit dolorem excepturi exercitationem facere ipsa perferendis praesentium nisi, illum at magnam? Repellat sequi voluptates enim eaque culpa, unde veritatis, voluptatibus odio quae corrupti itaque ullam? Id sit vitae accusamus esse ipsam incidunt natus non soluta tempore cupiditate a, error deserunt maxime, quia nostrum vero, praesentium maiores alias! Illo cum doloribus doloremque exercitationem.
-
                 </p>
             </article>
         </section>
         <!--Seção motivação-->
         <section id="motivacao" class="w-screen flex justify-center bg-gray-100 py-12">
             <article class="w-10/12 flex justify-center flex-col">
-                <h1 class="text-4xl font-bold text-stone-600  pb-8">
+                <h2 class="text-4xl font-bold text-stone-600 pb-8">
                     Motivação
-                </h1>
+                </h2>
                 <p class="text-xl text-stone-600 text-justify">
                     motivação por trás da criação desta plataforma nasceu da crença profunda de que a educação financeira é o alicerce para um futuro sólido e bem-sucedido. Além disso, desenvolver engajamento, comprometimento, respeito pessoal podem trazer recompensas e responsabilidades na vida estudantil. 
                     Reconhecemos a necessidade de equipar as gerações futuras com as habilidades e o conhecimento necessários para enfrentar esses desafios de maneira informada e confiante.
@@ -253,9 +228,9 @@
         <!--Seção Escola Piloto-->
         <section id="escola-piloto" class="w-screen my-12 flex justify-center">
             <article class="w-10/12 flex justify-center flex-col">
-                <h1 class="text-4xl font-bold text-stone-600 pb-8">
+                <h2 class="text-4xl font-bold text-stone-600 pb-8">
                     Escola Piloto
-                </h1>
+                </h2>
                 <p class="text-xl text-stone-600 text-justify">
                     O colégio estadual Miguel Nassif Maluf é a primeira instituição da plataforma.
                     Em agosto de 2023 a direção criou uma moeda virtual chamada Nass como recurso para os alunos.
@@ -271,22 +246,163 @@
                 <div>
                     <h2 class="text-4xl font-bold text-stone-600 p-4">Desenvolvedores</h2>
                 </div>
-                <p class="text-lg text-stone-600 text-justify p-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, et!
+                <p class="text-lg text-stone-600 text-center p-4">
+                    Equipe de desenvolvedores que colaboraram na criação do <span class="font-semibold">MePagaí</span> 
                 </p>
             </article>
-            <article class="flex flex-wrap justify-center">
-                <div class="w-72 h-96 p-4 rounded-xl m-4 bg-white shadow-lg shadow-stone-300 flex flex-col items-center">
-                    <div class="w-32 h-32 bg-stone-50 shadow-md rounded-full flex items-center justify-center">
-                        <img src="/img/TeamSvg.svg" class="scale-75"  alt="teamLogo">
+            <article class="flex flex-wrap justify-center gap-4">
+                
+                <!--Kheronn Khennedy-->
+                <div class="w-64 h-[23rem]  border-[1px] hover:bg-blue-100/20 hover:scale-[102%] transition-transform border-stone-200 p-2 rounded-bl-2xl rounded-tr-2xl m-4 shadow-md shadow-stone-200 flex flex-col items-center">
+                    <div class="w-32 h-32 bg-stone-50 shadow-md rounded-full mt-3 flex items-center justify-center">
+                        <img src="/img/Desenvolvedores/Kheronn.png" alt="teamLogo">
                     </div>
-                    <h3 class="text-xl font-bold text-stone-700 pt-4">Lorem, ipsum.</h3>
-                    <h4 class="text-lg font-bold text-stone-600 pt-4">Função no Projeto:</h4>
-                    <p class="text-stone-600 text-justify px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, expedita.</p>
+                    <h3 class="text-xl font-bold text-stone-700 pt-8">Kheronn Khennedy</h3>
+                    <h4 class="text-lg font-bold text-stone-600 pt-2">Função no Projeto:</h4>
+                    <p class="text-stone-600 text-center px-4">Lorem ipsum dolor sit amet.</p>
+                    <div class="grid grid-cols-3 gap-3 m-4">
+                        <a href="">
+                            <img src="/img/github.svg" alt="github" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/facebook.svg" alt="facebook" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/linkedin.svg" alt="linkedin" class="bg-stone-800 p-[2px] w-8 h-8 rounded-full">
+                        </a>
+                    </div>
                 </div>
+
+                  <!--Gustavo Henrique-->
+                  <div class="w-64 h-[23rem]  hover:bg-blue-100/20 hover:scale-[102%] transition-transform border-[1px] border-stone-200 p-2 rounded-bl-2xl rounded-tr-2xl m-4 shadow-md shadow-stone-200 flex flex-col items-center">
+                    <div class="w-32 h-32 bg-stone-50 shadow-md rounded-full mt-3 flex items-center justify-center">
+                        <img src="/img/Desenvolvedores/GustavoHenrique.png" alt="teamLogo">
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-700 pt-8">Gustavo Henrique</h3>
+                    <h4 class="text-lg font-bold text-stone-600 pt-2">Função no Projeto:</h4>
+                    <p class="text-stone-600 text-center px-4">Lorem ipsum dolor sit amet.</p>  <div class="grid grid-cols-3 gap-3 m-4">
+                        <a href="">
+                            <img src="/img/github.svg" alt="github" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/facebook.svg" alt="facebook" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/linkedin.svg" alt="linkedin" class="bg-stone-800 p-[2px] w-8 h-8 rounded-full">
+                        </a>
+                    </div>
+                </div>
+
+                <!--Erica Beatriz-->
+                <div class="w-64 h-[23rem]  border-[1px] hover:bg-blue-100/20 hover:scale-[102%] transition-transform border-stone-200 p-2 rounded-bl-2xl rounded-tr-2xl m-4 shadow-md shadow-stone-200 flex flex-col items-center">
+                    <div class="w-32 h-32 bg-stone-50 shadow-md rounded-full mt-3 flex items-center justify-center">
+                        <img src="/img/Desenvolvedores/EricaBeatriz.png" alt="teamLogo">
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-700 pt-8">Erica Beatriz</h3>
+                    <h4 class="text-lg font-bold text-stone-600 pt-2">Função no Projeto:</h4>
+                    <p class="text-stone-600 text-center px-4">Lorem ipsum dolor sit amet.</p>
+                    <div class="grid grid-cols-3 gap-3 m-4">
+                        <a href="">
+                            <img src="/img/github.svg" alt="github" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/facebook.svg" alt="facebook" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/linkedin.svg" alt="linkedin" class="bg-stone-800 p-[2px] w-8 h-8 rounded-full">
+                        </a>
+                    </div>
+                </div>
+
+                <!--Rafael Alfredo-->
+                <div class="w-64 h-[23rem]  border-[1px] hover:bg-blue-100/20 hover:scale-[102%] transition-transform border-stone-200 p-2 rounded-bl-2xl rounded-tr-2xl m-4 shadow-md shadow-stone-200 flex flex-col items-center">
+                    <div class="w-32 h-32 bg-stone-50 shadow-md rounded-full mt-3 flex items-center justify-center">
+                        <img src="/img/Desenvolvedores/Rafael.png" alt="teamLogo">
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-700 pt-8">Rafael Alfredo</h3>
+                    <h4 class="text-lg font-bold text-stone-600 pt-2">Função no Projeto:</h4>
+                    <p class="text-stone-600 text-center px-4">Lorem ipsum dolor sit amet.</p>
+                    <div class="grid grid-cols-3 gap-3 m-4">
+                        <a href="">
+                            <img src="/img/github.svg" alt="github" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/facebook.svg" alt="facebook" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/linkedin.svg" alt="linkedin" class="bg-stone-800 p-[2px] w-8 h-8 rounded-full">
+                        </a>
+                    </div>
+                </div>
+
+                <!--Geovana Domingos-->
+                <div class="w-64 h-[23rem]  border-[1px] hover:bg-blue-100/20 hover:scale-[102%] transition-transform border-stone-200 p-2 rounded-bl-2xl rounded-tr-2xl m-4 shadow-md shadow-stone-200 flex flex-col items-center">
+                    <div class="w-32 h-32 bg-stone-50 shadow-md rounded-full mt-3 flex items-center justify-center">
+                        <img src="/img/Desenvolvedores/Geovana.png" alt="teamLogo">
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-700 pt-8">Geovana Domingos</h3>
+                    <h4 class="text-lg font-bold text-stone-600 pt-2">Função no Projeto:</h4>
+                    <p class="text-stone-600 text-center px-4">Lorem ipsum dolor sit amet.</p>
+                    <div class="grid grid-cols-3 gap-3 m-4">
+                        <a href="">
+                            <img src="/img/github.svg" alt="github" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/facebook.svg" alt="facebook" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/linkedin.svg" alt="linkedin" class="bg-stone-800 p-[2px] w-8 h-8 rounded-full">
+                        </a>
+                    </div>
+                </div>
+
+                <!--Larissa Kochinski-->
+                <div class="w-64 h-[23rem]  border-[1px] hover:bg-blue-100/20 hover:scale-[102%] transition-transform border-stone-200 p-2 rounded-bl-2xl rounded-tr-2xl m-4 shadow-md shadow-stone-200 flex flex-col items-center">
+                    <div class="w-32 h-32 bg-stone-50 shadow-md rounded-full mt-3 flex items-center justify-center">
+                        <img src="/img/Desenvolvedores/Larissa.png" alt="teamLogo">
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-700 pt-8">Larissa Kochinski</h3>
+                    <h4 class="text-lg font-bold text-stone-600 pt-2">Função no Projeto:</h4>
+                    <p class="text-stone-600 text-center px-4">Lorem ipsum dolor sit amet.</p>
+                    <div class="grid grid-cols-3 gap-3 m-4">
+                        <a href="">
+                            <img src="/img/github.svg" alt="github" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/facebook.svg" alt="facebook" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/linkedin.svg" alt="linkedin" class="bg-stone-800 p-[2px] w-8 h-8 rounded-full">
+                        </a>
+                    </div>
+                </div>
+
+                <!--Maria Clara-->
+                <div class="w-64 h-[23rem]  border-[1px] hover:bg-blue-100/20 hover:scale-[102%] transition-transform border-stone-200 p-2 rounded-bl-2xl rounded-tr-2xl m-4 shadow-md shadow-stone-200 flex flex-col items-center">
+                    <div class="w-32 h-32 bg-stone-50 shadow-md rounded-full mt-3 flex items-center justify-center">
+                        <img src="/img/Desenvolvedores/Maria.png" alt="teamLogo">
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-700 pt-8">Maria Clara</h3>
+                    <h4 class="text-lg font-bold text-stone-600 pt-2">Função no Projeto:</h4>
+                    <p class="text-stone-600 text-center px-4">Lorem ipsum dolor sit amet.</p>
+                    <div class="grid grid-cols-3 gap-3 m-4">
+                        <a href="">
+                            <img src="/img/github.svg" alt="github" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/facebook.svg" alt="facebook" class="bg-stone-800 w-8 h-8 rounded-full">
+                        </a>
+                        <a href="">
+                            <img src="/img/linkedin.svg" alt="linkedin" class="bg-stone-800 p-[2px] w-8 h-8 rounded-full">
+                        </a>
+                    </div>
+                </div>
+                
+               
+
             </article>
     </section>
-        <footer class="bg-black phone-2:flex-row flex justify-center pt-3 items-center w-screen h-auto flex-col pb-6">
+        <footer class="bg-stone-950 phone-2:flex-row flex justify-center pt-3 items-center w-screen h-auto flex-col pb-6">
             <div class="w-auto mx-auto pb-8 pt-3 flex flex-col items-center">
                 <div class="flex items-center flex-col">
                     <a class="flex items-center mb-4 phone:mb-0" href="#">
@@ -295,7 +411,7 @@
                             MePagaí
                         </span>
                     </a>
-                    <nav class=" my-2">
+                    <nav class="my-2">
                         <ul
                             class="items-center flex flex-col phone:flex-row mb-4 gap-3 justify-center text-sm text-gray-500">
                             <li> <a href="#" class="hover:underline">
