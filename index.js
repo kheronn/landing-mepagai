@@ -32,7 +32,14 @@ function menuResponsivo(){
     
    }
     
-    
+   const showTextLink = document.getElementById('show-text-link');
+   const hiddenText = document.getElementById('hidden-text');
+
+   showTextLink.addEventListener('click', (event) => {
+       event.preventDefault(); // Impede que o link seja seguido
+       hiddenText.style.display = 'block'; // Torna o texto visível
+   }); 
+
     // if (menuMobile.style.display == 'block'){
     //     menuMobile.style.display = 'none'
     //     close.style.display = 'none'
